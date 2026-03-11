@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coin Collector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Coin Collector</h1>
+    <div class="hud">
+      <p>Score: <span id="score">0</span></p>
+      <p>Time: <span id="time">30</span>s</p>
+    </div>
+
+    <div id="game-area" aria-label="Game area">
+      <div id="player" aria-label="Player"></div>
+      <div id="coin" aria-label="Coin"></div>
+      <div id="overlay" class="hidden">
+        <p id="result"></p>
+        <button id="restart" type="button">Play Again</button>
+      </div>
+    </div>
+
+    <p class="hint">Use arrow keys to move and collect as many coins as possible in 30 seconds.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
